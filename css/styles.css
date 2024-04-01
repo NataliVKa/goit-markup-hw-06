@@ -21,7 +21,7 @@ a {
 }
 
 ul {
-  list-style: none;
+  list-style-type: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -68,8 +68,6 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-
-
 
 
   .container {
@@ -319,9 +317,9 @@ img {
       fill: #f4f4fd;
     }
     
-    .mobile-link:hover, .mobile-link:focus {
+    /* .mobile-link:hover, .mobile-link:focus {
       background-color: #4d5ae5;
-    }
+    } */
     .mobile-icon {
         fill: #f4f4fd;
     }
@@ -504,10 +502,10 @@ display: flex;
 .hero {
     padding: 112px 0;
     
-  background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
       url(../images/Dark-bg-tablet-1x-min.jpg);
 }
 }
