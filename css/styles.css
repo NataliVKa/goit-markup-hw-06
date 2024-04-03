@@ -87,8 +87,6 @@ img {
   }
   
 
-
-
 @media only screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -97,8 +95,7 @@ img {
   }
 }
 
-
-/*?---------=== MOBILE HEADER STYLES===------- */
+/*?---------=== HEADER MOBILE STYLES===------- ?*/
 
 .header {
   border-bottom: 1px solid #e7e9fc;
@@ -166,7 +163,6 @@ img {
       
     }
 
-
   /* @media only screen and (min-width: 768px) {
     .header-menu-list,
     .header-address {
@@ -175,7 +171,6 @@ img {
   } */
   
   
-    
   /**-------======MOBILE MENU=====------*/
 
   @media only screen and (min-width: 767px) {
@@ -326,15 +321,13 @@ img {
   
   
   
-/**============== TABLET HEADER STYLE ===============*/
-
+/**============== HEADER TABLET STYLES ===============*/
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
   }
-
 
 
 @media screen and (min-width: 768px) {
@@ -395,7 +388,7 @@ gap: 40px;
 }
 
 
-/**------- DESKTOP HEADER STYLE ----- */
+/**-------HEADER DESKTOP STYLES ----- */
 
 /* @media only screen and (min-width: 1158px) {
   .container {
@@ -429,7 +422,7 @@ display: flex;
 
 
 
-  /**-------------------- MOBILE HERO STYLE --------------- */
+  /**--------------------HERO MOBILE STYLES --------------- */
 
     .hero {
     padding-top: 72px;
@@ -496,7 +489,7 @@ display: flex;
     background-color: #404bbf;
   } */
 
-/* *-----------------TABLET HERO STYLE--------------------*/
+/* *----------------- HERO TABLET STYLES --------------------*/
 
   @media screen and (min-width: 768px) {
 .hero {
@@ -508,22 +501,22 @@ display: flex;
     ),
       url(../images/Dark-bg-tablet-1x-min.jpg);
 }
+
+.hero-title {
+  max-width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 36px;
+}
 }
 
 @media  screen and (min-resolution: 192dpi) and (min-width: 768px) {
   .hero {
     background-image: url(../images/Dark-bg-tablet-@2x-min.jpg);
 }
-
-.hero-title {
-max-width: 496px;
-font-size: 56px;
-line-height: 1.07;
-margin-bottom: 36px;
-}
 }
 
-  /**--=====---DESKTOP HERO STYLE---===----*/
+  /**--=====--- HERO DESKTOP STYLES ---===----*/
 
   /* @media screen and (min-width: 1158px) {
 .hero {
@@ -549,7 +542,7 @@ margin-bottom: 36px;
 
 
 /**--------------------------------------*/
-/**---------- MOB FEATURES STYLE------------*/
+/**----------FEATURES MOBILE STYLES------------*/
 
 .features {
   padding: 96px 0;
@@ -589,7 +582,7 @@ margin-bottom: 36px;
   letter-spacing: 0.02em;
 }
 
-/* *-----TABLET FEATURES STYLE--------*/
+/* *-----FEATURES TABLET STYLE--------*/
 
 .features {
   padding: 96px 0;
@@ -611,12 +604,10 @@ margin-bottom: 36px;
 }
 
 .features-item {
-  width: calc((100% - 24) / 2);
-  max-width: 100%;
+  width: calc((100% - 24px) / 2);
 }
 
 .features-item-icons {
-  display: none;
 }
 
 .features-subtitle {
@@ -624,7 +615,7 @@ margin-bottom: 36px;
 }
 }
 
-/**--=====---DESKTOP FEATURES STYLE---===----*/
+/**--=====--- FEATURES DESKTOP STYLES ---===----*/
 
 /* @media screen and (min-width: 1158px) {
   .features {
@@ -661,7 +652,7 @@ margin-bottom: 36px;
 
 
 /**-------------------------------------------*/
-/**-------------TEAM MOBILE STYLE------------*/
+/**------------- TEAM MOBILE STYLES ------------*/
 
 .team {
   background-color: #f4f4fd;
@@ -758,7 +749,7 @@ margin-bottom: 72px;
 
 
 
-/**--=====---TABLET TEAM STYLE----====----*/
+/**--=====--- TEAM TABLET STYLES ----====----*/
 
 @media screen and (min-width: 768px) {
   .team-container {
@@ -769,21 +760,18 @@ margin-bottom: 72px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 64px;
+    /* column-gap: 24px;
+    row-gap: 64px; */
+    gap: 64px 24px;
   }
 
   .team-item {
     width: calc((100% - 24px) / 2);
   }
-
-  .team-list {
-    gap: 64px 24px;
-  }
 }
 
 
-/**----=========Desktop TEAM style======----- */
+/**----========= TEAM DESKTOP STYLES ======----- */
 
 /* @media screen and (min-width: 1158px) {
   .team {
@@ -800,7 +788,7 @@ margin-bottom: 72px;
 } */
 
 /**------------------------------------*/
-/**-------------PORTFOLIO-------------*/
+/**------------- PORTFOLIO MOBILE STYLES -------------*/
 
 .portfolio {
   background-color: #fff;
@@ -885,9 +873,9 @@ margin-bottom: 72px;
   transform: translateY(0%);
 }
 
-/* *-=====----TABLET TEAM STYLE--------*/
+/* *-=====----PORTFOLIO TABLET STYLES--------*/
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .portfolio-list {
     gap: 72px 24px;
 }
@@ -895,9 +883,9 @@ margin-bottom: 72px;
   .portfolio-item {
   width: calc((100% - 24px) / 2);
 }
-} */
+}
 
-/**----=========Desktop TEAM style----- === */
+/**----========= PORTFOLIO DESKTOP STYLES ----- === */
 
 /* @media screen and (min-width: 1158px) {
 .portfolio {
@@ -920,12 +908,12 @@ margin-bottom: 72px;
 }
 }  */
 
-/**------------------------------------*/
-/**---------------FOOTER---------------*/
+/**----------------------------------------------------*/
+/**--------------- FOOTER MOBILE STYLES ---------------*/
 
 .footer {
   background: #2e2f42;
-    padding-top: 98px;
+    padding-top: 96px;
     padding-bottom: 96px;
   }
 
@@ -933,6 +921,7 @@ margin-bottom: 72px;
   display: flex;
   justify-content: center;
   color: #4d5ae5;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -1070,7 +1059,7 @@ margin-bottom: 72px;
   
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (max-width: 767px) {
   .sub-footer, .social-media, .footer-logo {
     display: block;
     text-align: center;
@@ -1078,50 +1067,62 @@ margin-bottom: 72px;
 }
 
 
-/**-=====----TABLET FOOTER STYLE--------*/
+/**-=====---- FOOTER TABLET STYLES--------*/
 
-/* @media screen and (min-width: 768px) {
-.footer {
-  padding-bottom: 0;
-}
-
+@media screen and (min-width: 768px) {
 .footer-container {
-  padding-left: 0;
-  padding-right: 0;
-  gap: 0;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
+display: inline-flex;
+flex-wrap: wrap;
+align-items: baseline;
+gap: 24px;
+}
 }
 
-.footer-title {
-  text-align: left;
+@media screen and (min-width: 768px) {
+  .footer-title {
+    margin-left: 108px;
+  }
+
+.footer-logo {
+  display: inline-block;
 }
+
 
 .footer-text {
   max-width: 264px;
 }
 
-.footer-social {
-  gap: 16px;
-  max-width: 288px;
-  align-items: flex-start;
+.social-media {
+  justify-content: flex-start;
 }
-
 
 .footer-icon-list {
-  margin-bottom: 72px;
+  margin-bottom: unset;
+}
 }
 
+@media screen and (min-width: 768px) {
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  margin-left: 108px;
+}
 
 .sub-footer {
-  text-align: left;
+  justify-content: flex-start;
 }
 
-
-.icon-footer {
-  fill: #f4f4fd;
+.form-footer {
+  display: flex;
+  flex-direction: row;
 }
+
+.footer-input {
+  width: 264px;
+  margin-bottom: unset;
+}
+}
+
 
 .footer-link:hover {
   background-color: #31d0aa;
@@ -1132,11 +1133,10 @@ margin-bottom: 72px;
   background-color: #28f8c7;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} 
 
-} */
 
-/* *----=========Desktop FOOTER styles----- === */
+/* *----========= FOOTER DESKTOP STYLES ----- === */
 
 /* @media screen and (min-width: 1158px) {
     .footer-container {
