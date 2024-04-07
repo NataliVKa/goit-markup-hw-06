@@ -173,7 +173,7 @@ img {
   
   /**-------======MOBILE MENU=====------*/
 
-  @media only screen and (min-width: 767px) {
+  @media only screen and (max-width: 767px) {
     .mobile-menu {
       display: flex;
       flex-direction: column;
@@ -203,7 +203,6 @@ img {
       position: relative;
       display: flex;
       flex-direction: column;
-      
       height: 100%;
     }
 
