@@ -1089,6 +1089,11 @@ margin-bottom: 72px;
     display: inline-block;
     text-align: center;
 }
+
+.sub-footer {
+  display: block;
+  text-align: center;
+}
 }
 
 
@@ -1101,6 +1106,10 @@ flex-wrap: wrap;
 align-items: baseline;
 gap: 0 24px;
 max-width: 584px;
+}
+
+.footer-title {
+  text-align: left;
 }
 }
 
@@ -1150,6 +1159,7 @@ max-width: 584px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-link:focus {
   background-color: #28f8c7;
   transition-duration: 250ms;
@@ -1178,9 +1188,9 @@ max-width: 584px;
   margin-bottom: 0;
 }
 
-/* .social-media {
+.footer-social {
   margin-bottom: 0;
-} */
+}
 
 .footer-subscribe {
   margin-left: 80px;
