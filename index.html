@@ -41,7 +41,7 @@
         
         <!--------========== open-btn ==========-------->
 
-        <button class="menu-open-btn" type="button">
+        <button class="menu-open-btn" type="button" data-menu-open>
           <svg class="menu-open-btn-icon" width="24" height="24" aria-label="mobile menu open icon">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -69,7 +69,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-order-btn">Order Service</button>
+          <button type="button" class="hero-order-btn" data-modal-open>Order Service</button>
         </div>
       </section>
     
@@ -796,9 +796,9 @@
 
     <!----------------- Modal Section ----------------->
 
-    <div class="backdrop">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg
             class="modal-close-btn-icon"
             width="8"
@@ -908,9 +908,9 @@
 
     <!------------= mobile-menu----------= -->
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" data-menu>
       <div class="mobile-menu-container">
-        <button class="mobil-close-btn">
+        <button class="mobil-close-btn" data-menu-close>
           <svg class="mobil-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#iconVector"></use>
           </svg>
@@ -972,5 +972,41 @@
           </div>
       <div>
     </div>
+    <script>
+      (() => {
+        const refs = {
+          openMenuBtn: document.querySelectorAll('[data-menu-open]'),
+          closeMenuBtn: document.querySelectorAll('[data-menu-close]'),
+          menu: document.querySelector('[data-menu]'),
+        };
+
+        refs.openMenuBtn.forEach(element => {
+          element.addEventListener('click', toggleMenu);
+        });
+
+        function toggleMenu() {
+          refs.menu.classList.toggle('is-open');
+          document.body.classList.toggle('no-scroll');
+        }
+      })();
+    </script>
+    <script>
+      (() => {
+        const refs = {
+          openMenuBtn: document.querySelectorAll('[data-modal-open]'),
+          closeMenuBtn: document.querySelectorAll('[data-modal-close]'),
+          menu: document.querySelector('[data-modal]'),
+        };
+
+        refs.openMenuBtn.forEach(element => {
+          element.addEventListener('click', toggleMenu);
+        });
+
+        function toggleMenu() {
+          refs.menu.classList.toggle('is-open');
+          document.body.classList.toggle('no-scroll');
+        }
+      })();
+    </script>
   </body>
 </html>
